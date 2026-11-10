@@ -7,6 +7,7 @@
 **在线预览：** https://mystia114514.github.io/lostword_shutdown_countdown/
 
 [![MIT License](https://img.shields.io/github/license/Mystia114514/lostword_shutdown_countdown)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/Mystia114514/lostword_shutdown_countdown)](https://github.com/Mystia114514/lostword_shutdown_countdown/releases)
 [![Demo](https://img.shields.io/badge/demo-GitHub%20Pages-2ea44f)](https://mystia114514.github.io/lostword_shutdown_countdown/)
 
 ---
