@@ -4,6 +4,11 @@
 
 本项目为非官方粉丝作品，与东方归言录（Touhou LostWord）的开发商、发行商及东方 Project 权利方无任何关联；页面不包含任何游戏美术、音频等素材，相关名称与商标归各自权利人所有。代码部分以 MIT 协议开源。
 
+**在线预览：** https://mystia114514.github.io/lostword_shutdown_countdown/
+
+[![MIT License](https://img.shields.io/github/license/Mystia114514/lostword_shutdown_countdown)](LICENSE)
+[![Demo](https://img.shields.io/badge/demo-GitHub%20Pages-2ea44f)](https://mystia114514.github.io/lostword_shutdown_countdown/)
+
 ---
 
 ## 项目简介
