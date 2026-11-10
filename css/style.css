@@ -742,6 +742,7 @@ body {
     font-size: 0.42em;
     letter-spacing: 0.06em;
     color: rgba(255, 180, 136, 0.95);
+    transition: color 1.6s ease;
 }
 
 .epilogue-text {
@@ -803,6 +804,10 @@ body {
 
 .is-ended .live-dot {
     box-shadow: 0 0 10px 1px rgba(255, 180, 136, 0);
+}
+
+.is-ended .epilogue-date .t {
+    color: rgba(154, 166, 184, 0.9);
 }
 
 @media (max-width: 720px) {
@@ -885,6 +890,7 @@ body {
     .clock-days,
     .beam-dot,
     .live-dot,
+    .epilogue-date .t,
     .epilogue-text .status {
         transition: none;
     }
