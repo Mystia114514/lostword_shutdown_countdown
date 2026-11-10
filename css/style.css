@@ -480,16 +480,6 @@ body {
     font-variant-numeric: tabular-nums;
 }
 
-.chronicle-verified {
-    margin: 6px 0 0;
-    font-family: var(--mono);
-    font-size: 8.5px;
-    letter-spacing: 0.18em;
-    color: var(--faint);
-    text-transform: uppercase;
-    font-variant-numeric: tabular-nums;
-}
-
 .timeline-wrap {
     position: relative;
     margin-top: 56px;

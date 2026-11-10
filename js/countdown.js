@@ -2,7 +2,6 @@
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     // 页面上的所有时间文案均由 DATA 派生；改开服/停服时间只需改这里。
     const DATA = {
-        checkedAt: "2026-11-10",
         chronicle: [
             {
                 date: "2021-09-30T10:00:00+08:00",
@@ -207,7 +206,6 @@
     setText("eventTime", deadlineTimeText);
     setText("epilogueDate", deadlineDateText);
     setText("epilogueTime", deadlineTimeText);
-    setText("verifiedDate", formatDate(DATA.checkedAt));
     setText("statusUpcoming", "东方归言录国服将于 " + deadlineDateText + " " + deadlineTimeText + " 停止服务。页面所显示时间以北京时间（UTC+08:00）为准。");
     setText("statusEnded", closedNotice);
 
