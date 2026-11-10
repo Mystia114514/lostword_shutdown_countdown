@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#05070d">
+    <meta name="description" content="东方归言录国服停服倒计时">
+    <title>东方归言录国服停服倒计时</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas class="cone" id="cone" aria-hidden="true"></canvas>
+
+    <noscript>
+        <p class="noscript">本页倒计时与编年史需要启用 JavaScript 才能显示。</p>
+    </noscript>
+
+    <div class="page">
+        <main class="hero">
+            <div class="hero-top">
+                <span class="tag">Touhou LostWord <i>/</i> CN</span>
+                <span class="tag tag-right"><span class="live-dot" aria-hidden="true"></span><span id="tMinus">T− 000D 00:00:00</span></span>
+            </div>
+
+            <div class="core">
+                <p class="eyebrow"><span class="beam-dot" aria-hidden="true"></span>服务终止 / Service Termination</p>
+                <h1 class="title">
+                    <span class="title-zh">东方归言录</span>
+                    <span class="title-sub">国服停服倒计时 · Countdown</span>
+                </h1>
+
+                <div class="clock" role="timer" aria-live="off">
+                    <div class="days-row">
+                        <span class="clock-days" id="days">000</span>
+                        <span class="days-unit"><b>DAYS</b><span>剩余天数</span></span>
+                    </div>
+                    <div class="subclock">
+                        <div class="cell">
+                            <span class="v" id="hours">00</span>
+                            <span class="k">HRS<i>/</i>时</span>
+                        </div>
+                        <div class="cell">
+                            <span class="v" id="minutes">00</span>
+                            <span class="k">MIN<i>/</i>分</span>
+                        </div>
+                        <div class="cell">
+                            <span class="v" id="seconds">00</span>
+                            <span class="k">SEC<i>/</i>秒</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="deadline">
+                    <span>Stop Service</span>
+                    <span class="v" id="deadlineDate"></span>
+                    <span class="sep">/</span>
+                    <span id="deadlineTime"></span>
+                </p>
+
+                <div class="scale">
+                    <div class="scale-head">
+                        <span>运营周期 / Service Lifetime</span>
+                        <span id="progressText">00.0%</span>
+                    </div>
+                    <div class="scale-track" id="progressTrack" role="progressbar" aria-label="运营周期进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                        <div class="scale-fill" id="progressBar"></div>
+                        <span class="scale-head-mark" id="progressHead" aria-hidden="true"></span>
+                    </div>
+                    <div class="scale-foot">
+                        <span id="scaleStart"></span>
+                        <span id="scaleEnd"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-bottom">
+                <span class="tag">Event <i>·</i> <span id="eventDate"></span> <i>·</i> <span id="eventTime"></span></span>
+                <a class="scroll-hint" href="#chronicle">Scroll <em aria-hidden="true">↓</em> 编年史</a>
+            </div>
+        </main>
+
+        <section class="chronicle" id="chronicle" aria-label="东方归言录国服编年史">
+            <header class="chronicle-head">
+                <p class="chronicle-kicker">Chronicle</p>
+                <h2 class="chronicle-title">东方归言录国服编年史</h2>
+                <p class="chronicle-now">Now <span id="nowDate"></span></p>
+                <p class="chronicle-verified">Data checked <span id="verifiedDate"></span></p>
+            </header>
+            <div class="timeline-wrap">
+                <div class="timeline-rail" aria-hidden="true">
+                    <span class="timeline-beam" id="beam"></span>
+                    <span class="timeline-head-mark" id="beamHead"></span>
+                </div>
+                <ol class="timeline" id="events"></ol>
+            </div>
+        </section>
+
+        <section class="epilogue" id="epilogue" aria-label="停服信息">
+            <p class="epilogue-kicker">终点 / Terminus</p>
+            <p class="epilogue-date"><span class="d" id="epilogueDate"></span> <span class="t" id="epilogueTime"></span></p>
+            <p class="epilogue-text">
+                <span class="status status-upcoming" id="statusUpcoming"></span>
+                <span class="status status-ended" id="statusEnded" aria-hidden="true"></span>
+            </p>
+            <p class="epilogue-mark">Touhou LostWord — China Server</p>
+        </section>
+    </div>
+
+    <script src="js/cone.js"></script>
+    <script src="js/countdown.js"></script>
+</body>
+</html>

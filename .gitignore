@@ -1,0 +1,12 @@
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 本地预览与截图测试的临时产物
+.chrome-shot/
+_shot_*
+_check_*
+
+# 依赖目录（如使用 npx serve 等工具）
+node_modules/
